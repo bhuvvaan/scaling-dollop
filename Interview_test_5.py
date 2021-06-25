@@ -5,14 +5,14 @@ i = 0
 while i<len(input_brackets_string):
     item = input_brackets_string[i]
     if len(item)%2!=0:
-            print('NO')
+            print('NO!')
             i+=1
             continue
     j=0
     break_all_loops = False
     while j<len(item):
         if item[j] in right_brackets.keys():
-            print('NO')
+            print('NO!')
             break
         if item[j] in left_brackets.keys():
             k=1
@@ -32,17 +32,17 @@ while i<len(input_brackets_string):
                                     j+=1
                                     continue
                                 else:
-                                    print('NO')
+                                    print('NO!')
                                     break_all_loops = True
                                     break
                             except:
-                                print('NO')
+                                print('NO!')
                                 break_all_loops = True
                                 break
                         if break_all_loops:
                             break
                 except:
-                    print('NO')
+                    print('NO!')
                     break_all_loops = True
                     break
             if break_all_loops:
