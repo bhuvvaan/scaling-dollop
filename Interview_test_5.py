@@ -48,5 +48,5 @@ while i<len(input_brackets_string):
             if break_all_loops:
                 break
     else:
-        print('YES')
+        print('YES!')
     i+=1    
